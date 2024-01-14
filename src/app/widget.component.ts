@@ -67,10 +67,6 @@ import { WidgetFormComponent } from "./widget-form.component";
 export class WidgetComponent {
   currentTab: Tab = Tab.Main;
   Tab = Tab;
-
-  public changeTab(): void {
-    console.log("Hey you!");
-  }
 }
 export enum Tab {
   Main,

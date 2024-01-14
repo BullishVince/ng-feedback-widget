@@ -49,14 +49,13 @@ import { WidgetFormComponent } from "./widget-form.component";
           </div>
         </div>
         } @else if (currentTab === Tab.Issue) {
-        <feedback-widget-form></feedback-widget-form>
-        <!-- <h1>Issue</h1> -->
+        <feedback-widget-form [currentTab]="currentTab"></feedback-widget-form>
         } @else if (currentTab === Tab.Idea) {
-        <h1>Idea</h1>
+        <feedback-widget-form [currentTab]="currentTab"></feedback-widget-form>
         } @else if (currentTab === Tab.Other) {
-        <h1>Other</h1>
+        <feedback-widget-form [currentTab]="currentTab"></feedback-widget-form>
         } @else if (currentTab === Tab.Completed) {
-        <h1>Completed</h1>
+        <feedback-widget-form [currentTab]="currentTab"></feedback-widget-form>
         }
       </div>
     </mat-dialog-content>
